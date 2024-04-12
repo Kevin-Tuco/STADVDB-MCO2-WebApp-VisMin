@@ -41,7 +41,7 @@ conBtns.forEach(button => {
                 closeCentralBtn.style.display = 'none';
                 closeConnectionToCentral();
                 break;
-            case 'close-VisMin':
+            case 'close-vismin':
                 openVisMinBtn.style.display = '';
                 closeVisMinBtn.style.display = 'none';
                 closeConnectionToVisMin();

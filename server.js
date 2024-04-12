@@ -74,6 +74,7 @@ VisMinConnection.connect(err => {
 // Route to handle closing connection to Central
 app.get('/dbChange', (req, res) => {
     const action = req.query.action;
+    console.log("In DB Change");
     switch (action) {
         case 'closeConnectionToCentral':
             CentralDB_State = false;
