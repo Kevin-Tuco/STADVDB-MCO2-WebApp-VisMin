@@ -44,7 +44,7 @@ const VisMinConnection = mysql.createConnection({
 
 
 let CentralL = centralToVisMinConnection;
-let VisMin = visMinConnection;
+let VisMin = VisMinConnection;
 
 
 
@@ -551,7 +551,7 @@ function generateApptId(add_RegionName) {
             connection = luzonConnection; //bev
         } else {
             connection = centralToVisMinConnection;
-            connection = visMinConnection; //bev
+            connection = VisMinConnection; //bev
         }
 
         connection.query(query, [pattern], (error, results) => {
